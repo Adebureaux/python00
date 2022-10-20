@@ -1,7 +1,7 @@
 import sys
 
 def eprint(*args, **kwargs):
-    print(*args, file=sys.stderr, **kwargs)
+	print(*args, file=sys.stderr, **kwargs)
 
 if len(sys.argv) > 1:
 	if len(sys.argv) != 2:
