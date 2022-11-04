@@ -22,3 +22,12 @@ def text_analyzer(s):
 		print(f"- {sum(map(str.islower, s))} lower letter(s)")
 		print(f"- {count_punctuation(s)} punctuation mark(s)")
 		print(f"- {s.count(' ')} space(s)")
+
+
+if __name__ == "__main__":
+	if len(sys.argv) > 2:
+		eprint("error: more than one argument are provided")
+	elif len(sys.argv) == 2:
+		text_analyzer(sys.argv[1])
+	else:
+		text_analyzer('')
