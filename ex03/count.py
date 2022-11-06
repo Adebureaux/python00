@@ -12,6 +12,7 @@ def count_punctuation(s):
 	return count
 
 def text_analyzer(s):
+	'''Takes a string and print number of: characters, uppercase letters, lowercase letters, punctuation marks, spaces'''
 	if not s:
 		print("nothing provided, please provide a string")
 	elif not isinstance(s, str):
