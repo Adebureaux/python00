@@ -7,7 +7,7 @@ def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 
 def f_isdigit(n, digits):
-	'''Takes a variable to verify if it's a number, optionally takes an int to define how much digits are expected'''
+	'''Takes a variable to verify if it's an integer, optionally takes an int to define how much digits are expected'''
 	try:
 		int(n)
 	except ValueError:
