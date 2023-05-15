@@ -21,7 +21,7 @@ def fill_zero(n, digits):
 	return str(l*"0"+str(n))
 
 if type(kata) is tuple:
-	if len(kata) is not 5:
+	if len(kata) != 5:
 		eprint("error: kata lenght must be 5")
 	elif f_isdigit(kata[0], 4) and f_isdigit(kata[1], 2) and f_isdigit(kata[2], 2) and f_isdigit(kata[3], 2) and f_isdigit(kata[4], 2):
 		print(f"{fill_zero(kata[1], 2)}/{fill_zero(kata[2], 2)}/{fill_zero(kata[0], 4)} {fill_zero(kata[3], 2)}:{fill_zero(kata[4], 2)}")

@@ -37,7 +37,7 @@ def fill_zero(n, digits):
 	return str(l*"0"+str(n))
 
 if type(kata) is tuple:
-	if len(kata) is not 5:
+	if len(kata) != 5:
 		eprint("error: kata lenght must be 5")
 	elif f_isnndigit(kata[0], 2) and f_isnndigit(kata[1], 2) and isdecimal(kata[2]) and isdigit(kata[3]) and isdecimal(kata[4]):
 		print(f"module_{fill_zero(kata[0], 2)}, ex_{fill_zero(kata[1], 2)} : {format(kata[2], '.2f')}, {float(format(kata[3], '2f')):e}, {kata[4]:e}")
