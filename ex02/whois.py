@@ -3,12 +3,17 @@ import sys
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 
+def is_integer(str):
+	try:
+			int(str)
+	except ValueError:
+			return False
+	return True
+
 if len(sys.argv) > 1:
-	if sys.argv[1][0] == '-':
-		sys.argv[1] = sys.argv[1][1:]
 	if len(sys.argv) != 2:
 		eprint("error: more than one argument are provided")
-	elif not sys.argv[1].isdigit():
+	elif not is_integer(sys.argv[1]):
 		eprint("error: argument is not an integer")
 	else:
 		n = int(sys.argv[1])
