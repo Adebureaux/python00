@@ -32,7 +32,7 @@ if type(kata) is tuple:
 	if len(kata) != 5:
 		eprint("error: kata lenght must be 5")
 	elif is_nninteger(kata[0], 2) and is_nninteger(kata[1], 2) and is_type(kata[2], float) and is_type(kata[3], int) and is_type(kata[4], float):
-		print(f"module_{fill_zero(kata[0], 2)}, ex_{fill_zero(kata[1], 2)} : {format(kata[2], '.2f')}, {kata[3]:.2e}, {kata[4]:.2e}")
+		print(f"module_{fill_zero(kata[0], 2)}, ex_{fill_zero(kata[1], 2)} : {kata[2]:.2f}, {kata[3]:.2e}, {kata[4]:.2e}")
 	else:
 		eprint("error: kata format is not valid")
 else:
