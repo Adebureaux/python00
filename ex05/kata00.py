@@ -6,17 +6,17 @@ kata = (100, 312, "210", "145")
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 
-def f_isdigit(n):
-	'''Takes a variable to verify if it's a number'''
+def is_integer(str):
+	'''Takes a variable to verify if it's an integer'''
 	try:
-		int(n)
-		return True
+			int(str)
 	except ValueError:
-		return False
+			return False
+	return True
 
 if type(kata) is tuple:
 	for digit in kata:
-		if f_isdigit(digit) is False:
+		if is_integer(digit) is False:
 			sys.exit("error: kata must be filled with digits")
 	print(f"The {len(kata)} numbers are: ", end="")
 	print(*kata, sep=", ")

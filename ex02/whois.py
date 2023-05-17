@@ -4,6 +4,7 @@ def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)
 
 def is_integer(str):
+	'''Takes a variable to verify if it's an integer'''
 	try:
 			int(str)
 	except ValueError:

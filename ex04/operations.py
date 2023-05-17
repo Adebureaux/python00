@@ -1,6 +1,7 @@
 import sys
 
 def is_integer(str):
+	'''Takes a variable to verify if it's an integer'''
 	try:
 			int(str)
 	except ValueError:

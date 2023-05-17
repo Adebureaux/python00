@@ -9,10 +9,12 @@ def eprint(*args, **kwargs):
 def f_isdigit(n, digits):
 	'''Takes a variable to verify if it's an integer, optionally takes an int to define how much digits are expected'''
 	try:
-		int(n)
+		t = int(n)
 	except ValueError:
 		return False
-	if len(str(n)) > digits:
+	if t < 0:
+		return False
+	if len(str(n)) > digits or t < 0:
 		return False
 	return True
 
