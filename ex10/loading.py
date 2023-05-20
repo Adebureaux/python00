@@ -1,8 +1,4 @@
-# from tqdm import tqdm
 import time
-
-# for i in tqdm(range(100)):
-#	 time.sleep(0.1)
 
 def ft_progress(lst):
 		total = len(lst)
@@ -18,16 +14,15 @@ def ft_progress(lst):
 				print(f"Progress: {bar} {percentage}%", end="\r")
 
 				# Process the current item
-				# ...
 
 				yield
 
-		print()	# Print a new line at the end
+		print()
 
-# Example usage
-my_list = [1, 2, 3, 4, 5]
-
-for _ in ft_progress(my_list):
-		time.sleep(0.1)
-		# Do additional processing or display here
-		pass
+listy = range(1000)
+ret = 0
+for elem in ft_progress(listy):
+	ret += 1
+	time.sleep(0.01)
+print()
+print(ret)
