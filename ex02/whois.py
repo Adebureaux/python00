@@ -19,8 +19,8 @@ if len(sys.argv) > 1:
 	else:
 		n = int(sys.argv[1])
 		if not n:
-			print("I'm Zero")
+			print("I'm Zero.")
 		elif n % 2:
-			print("I'm Odd")
+			print("I'm Odd.")
 		else:
-			print("I'm Even")
+			print("I'm Even.")

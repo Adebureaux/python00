@@ -1,7 +1,7 @@
 import sys
 
 # Put this at the top of your kata00.py file
-kata = (100, 312, "210", "145")
+kata = (100, 312, 210, 145)
 
 def eprint(*args, **kwargs):
 	print(*args, file=sys.stderr, **kwargs)

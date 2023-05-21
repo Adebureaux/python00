@@ -24,7 +24,7 @@ def print_details(name):
 	recipe = cookbook.get(name)
 	if recipe:
 		print("Recipe details of '" + name + "' :")
-		if recipe['ingredients']:
+		if len(recipe['ingredients']):
 			print(f"Ingredient(s) list: {recipe['ingredients']}")
 		if recipe['meal']:
 			print(f"To be eaten for {recipe['meal']}")

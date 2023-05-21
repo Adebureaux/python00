@@ -45,10 +45,10 @@ def eprint(*args, **kwargs):
 
 if __name__ == '__main__':
 	if len(sys.argv) < 2:
-		eprint('ERROR: Program must contain one or more argument')
+		eprint('ERROR: Program must take one or more arguments')
 	joined = " ".join(sys.argv[1:]).upper()
 	if not all(w.isalnum() or w.isspace() for w in joined):
-		eprint('ERROR: Argument(s) must contains only alphanumeric character(s) or space(s)')
+		eprint('ERROR: Argument(s) must contain only alphanumeric character(s) or space(s)')
 	splited = joined.split()
 	for i, w in enumerate(splited):
 		for index, c in enumerate(w):
@@ -57,3 +57,4 @@ if __name__ == '__main__':
 			print('/', end=" ")
 		else:
 			print()
+

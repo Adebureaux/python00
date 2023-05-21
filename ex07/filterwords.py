@@ -13,7 +13,7 @@ if __name__ == '__main__':
 		if n <= 0:
 			eprint('ERROR: Second argument must be a positive integer')
 	except ValueError:
-			eprint('ERROR: Second argument must be a positive integer')
+			eprint('ERROR: Second argument must be an integer')
 	s = sys.argv[1].translate(str.maketrans('', '', string.punctuation)).split()
 	dst = [w for w in s if len(w) > n]
 	print(dst)
